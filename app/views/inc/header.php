@@ -9,3 +9,4 @@
     <title><?php echo APPNAME ?></title>
 </head>
 <body>
+    <?php require_once 'navbar.php';?>

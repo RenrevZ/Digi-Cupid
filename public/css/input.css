@@ -10,4 +10,9 @@ body{
     @apply bg-sky-500;
     border-radius: 5px;
   }
+
+a:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
   
