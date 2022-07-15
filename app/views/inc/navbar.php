@@ -12,7 +12,7 @@
                 <div class="absolute flex flex-col items-center self-end py-8 mt-17 hidden space-y-6 font-bold
              bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-slate-600">
 
-                    <a href="#">Home</a>
+                    <a href="<?php echo APPROOT?>">Home</a>
                     <a href="#">About</a>
                     <a href="#"> Doc.</a>
                 </div>
@@ -24,11 +24,11 @@
         <div class="wrapper hidden self-center text-lg md:block">
 
             <ul class="flex space-x-6">
-                <li class="active py-4 px-3 hover:text-gray-200">
-                    <a href="#">Home</a>
+                <li class="active p-4 hover:text-gray-200">
+                    <a href="<?php echo APPROOT?>">Home</a>
                 </li>
                 <li class="p-4 hover:text-gray-200">
-                    <a href="#">About</a>
+                    <a href="<?php echo APPROOT?>/pages/about">About</a>
                 </li>
                 <li class="p-4 hover:text-gray-200">
                     <a href="#"> Doc.</a>

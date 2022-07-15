@@ -11,7 +11,7 @@ class Pages extends Controller
     {
 
         $data = [
-            'title' => 'Welcome to ShareTech mini Framework'
+            'title' => 'Travel Share'
         ];
 
         $this->view('pages/index',$data);

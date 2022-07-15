@@ -6,7 +6,7 @@
             <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif" alt="">
         </div>
         <div class="title self-center ">
-            <h1 class="text-5xl font-medium mb-2">Travel Share</h1>
+            <h1 class="text-5xl font-medium mb-2"><?php echo $data['title'];?></h1>
             <p class="mb-5">
                 A experience that is worth sharing, Help others discover new places and have a new experience
                 through your stories
