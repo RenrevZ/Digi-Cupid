@@ -10,7 +10,18 @@
        <!-- hamburger menu -->
        <div class="menu block md:hidden">
                 <i class="fa-solid fa-bars text-3xl mt-4 "></i>
+                <div class="md:hidden">
+            <div class="absolute flex flex-col items-center self-end py-8 mt-17 hidden space-y-6 font-bold
+             bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-slate-600">
+
+             <a href="#">Home</a>
+             <a href="#">About</a>
+             <a href="#"> Doc.</a>
+            </div>
         </div>
+        </div>
+
+      
 
     <div class="wrapper hidden self-center text-lg md:block">
 
@@ -147,15 +158,16 @@
     </div>
 
     <!-- Documentary section -->
-    <div class="container mx-auto text-center ">
+    <div class="container mx-auto text-center mt-36">
         <h2 class="text-4xl">Learn about the Production</h2>
     </div>
-    <div class="flex justify-between mt-36">
-        <div class="left">
+
+    <div class="flex flex-col justify-between mt-36 md:flex-row">
+        <div class="left mb-10">
             <img src="https://static.wixstatic.com/media/c6ba6c_377676e7db5c4b58ac33dfe0f985bfe0~mv2.gif" alt="">
         </div>
 
-        <div class="max-w-6xl px-5 mx-auto  text-center">
+        <div class=" px-5 mx-auto  text-center">
             <!-- Developer Card -->
             <div class="flex flex-col  md:flex-row md:space-x-6">
                 
@@ -173,6 +185,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
 
