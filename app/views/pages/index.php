@@ -1,6 +1,6 @@
 <?php require_once APPROOT . '/views/inc/header.php'; ?>
 
-<div class="container mx-auto p-5">
+<div class="container mx-auto p-5 md:transition-all">
     <div class="grid gap-2 md:flex">
         <div class="img flex">
             <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif" alt="">
@@ -8,8 +8,7 @@
         <div class="title self-center ">
             <h1 class="text-5xl font-medium mb-2"><?php echo $data['title'];?></h1>
             <p class="mb-5">
-                A experience that is worth sharing, Help others discover new places and have a new experience
-                through your stories
+                 <?php echo $data['subtitle'];?>
             </p>
             <div class="button flex">
                 <a href="#" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg">Login</a>
@@ -125,7 +124,7 @@
 
     <div class="flex flex-col justify-between mt-36 md:flex-row mb-36">
 
-        <div class="left mb-10 mr-60">
+        <div class="left mb-10 mr-60 items-center ml-10">
             <img src="https://static.wixstatic.com/media/c6ba6c_377676e7db5c4b58ac33dfe0f985bfe0~mv2.gif" alt="" 
             class="w-96 ">
             <p class="text-sm text-slate-600">
@@ -135,7 +134,7 @@
 
         <div class=" px-5 mx-auto text-center">
             <!-- Developer Card -->
-            <div class="flex flex-col  md:flex-row md:space-x-6">
+            <div class="flex flex-col  md:flex-row">
 
                 <!-- Developer -->
                 <div class="flex flex-col items-center p-6 space-y-2 rounded-lg bg-slate-200 md:w-96">

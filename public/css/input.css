@@ -15,4 +15,32 @@ a:hover{
     transform: translateY(-5px);
     transition: 0.3s;
 }
-  
+
+#home,#about{
+    transition: 0.2s;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+#menuhidden{
+    display: none;
+}
+
+#bus{
+    position: relative;
+    animation-name: drive;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+@keyframe drive {
+    from{
+        position: absolute;
+        left:30%
+    }to{
+        position: absolute;
+        left:0
+    }
+}
