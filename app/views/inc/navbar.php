@@ -32,7 +32,7 @@
                     <a href="<?php echo URLROOT;?>/pages/about">About</a>
                 </li>
                 <li class="p-4 hover:text-gray-200" id="doc">
-                    <a href="#"> Doc.</a>
+                    <a href="#"> Login</a>
                 </li>
             </ul>
         </div>
