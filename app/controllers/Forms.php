@@ -10,10 +10,16 @@ class Forms extends Controller{
     }
 
     public function login(){
-        $data=[
-            'title' => 'Login'
-        ];
+
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
             
-        $this->view('forms/login',$data);
+        }else{
+            $data=[
+                'title' => 'Login'
+            ];
+                
+            $this->view('forms/login',$data);
+        }
+       
     }
 }

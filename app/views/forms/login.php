@@ -1,8 +1,8 @@
 <?php require_once APPROOT . '/views/inc/header.php'; ?>
 
-<div class="container mx-auto mt-10 mb-60">
-  <form action="" class="rounded-lg shadow-lg">
-    <div class="body grid md:grid-cols-2 justify-around ">
+<div class="container mx-auto mt-10 ">
+  <form action="<?php echo URLROOT.'/forms/login';?>" method="POST" class="rounded-lg shadow-lg">
+    <div class="body grid md:grid-cols-2 justify-around">
         <div class="leftside hidden md:block">
             <img src="https://i.pinimg.com/originals/b8/b7/fa/b8b7faa068cb612f21a7f7268313064b.png" alt=""
             class="h-full">
@@ -24,18 +24,18 @@
             </div>
 
            <div class="flex flex-col items-center justify-between md:flex-row mb-10">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-10" type="button">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-10" type="submit">
                     Log In
                 </button>
                 <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 md:-mt-10" href="#">
                   <small>Doesn't have account?</small> Sign Up
                 </a>
             </div>
-            </div>
         </form>
     </div>
   </form>
 </div>
 
-
+<div class="hidden">
 <?php require_once APPROOT . '/views/inc/footer.php'; ?>
+</div>
