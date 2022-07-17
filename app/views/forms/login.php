@@ -27,8 +27,8 @@
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-10" type="submit">
                     Log In
                 </button>
-                <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 md:-mt-10" href="#">
-                  <small>Doesn't have account?</small> Sign Up
+                <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 md:-mt-10" href="<?php echo URLROOT.'/forms/signup';?>">
+                  <small>Doesn't have account?</small>Sign Up
                 </a>
             </div>
         </form>

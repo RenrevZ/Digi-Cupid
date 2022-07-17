@@ -22,4 +22,17 @@ class Forms extends Controller{
         }
        
     }
+    public function signup(){
+
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            
+        }else{
+            $data=[
+                'title' => 'Sign Up'
+            ];
+                
+            $this->view('forms/signup',$data);
+        }
+       
+    }
 }
