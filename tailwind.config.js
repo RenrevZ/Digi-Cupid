@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/views/pages/*.php',
-            './app/views/inc/*.php'],
+            './app/views/inc/*.php',
+            './app/views/forms/*.php'],
   theme: {
     screens:{
       sm : '480px',

@@ -122,10 +122,10 @@
 </div>
 <div class="container mx-auto">
 
-    <div class="grid  mt-36 md:grid-cols-2 mb-36">
+    <div class="grid  md:mt-36 md:grid-cols-2 mb-36">
 
-        <div class="left mb-10  items-center ml-10">
-            <img src="https://c.tenor.com/NOYF3f82b_gAAAAC/programmer.gif" alt="" 
+        <div class="left mb-10  items-center ml-10 ">
+            <img src="https://cdn.dribbble.com/users/1162077/screenshots/5403918/focus-animation.gif" alt="" 
             >
             <p class="text-sm text-slate-600">
                 "This site was was build using PHP OOP and MVC structure "
@@ -134,7 +134,7 @@
 
         <div class=" px-5 mx-auto text-center">
             <!-- Developer Card -->
-            <div class="flex flex-col  md:flex-row">
+            <div class="flex flex-col  md:flex-row md:mt-24">
 
                 <!-- Developer -->
                 <div class="flex flex-col items-center p-6 space-y-2 rounded-lg bg-slate-200 md:w-96">

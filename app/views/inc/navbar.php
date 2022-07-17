@@ -16,7 +16,7 @@
 
                         <a href="<?php echo URLROOT;?>" class="hover:text-slate-400 text-lg">Home</a>
                         <a href="<?php echo URLROOT;?>/pages/about" class="hover:text-slate-400 text-lg">About</a>
-                        <a href="#" class="hover:text-slate-400 text-lg"> Doc.</a>
+                        <a href="<?php echo URLROOT;?>/forms/login" class="hover:text-slate-400 text-lg"> Login</a>
                     </div>
          
 
@@ -31,8 +31,8 @@
                 <li class="p-4 hover:text-gray-200" id="about">
                     <a href="<?php echo URLROOT;?>/pages/about">About</a>
                 </li>
-                <li class="p-4 hover:text-gray-200" id="doc">
-                    <a href="#"> Login</a>
+                <li class="p-4 hover:text-gray-200" id="login">
+                    <a href="<?php echo URLROOT;?>/forms/login"> Login</a>
                 </li>
             </ul>
         </div>
