@@ -142,10 +142,10 @@
                     <h5 class="text-lg font-bold">Harvy Gascon</h5>
                     <p class="text-md text-slate-600">
                         "Hi i am Harvy Gascon the Developer of Travel Share
-                        i am pleased that you see my work and i made this done
-                        please click the documentary below to see how i made this"
+                        i am pleased that you see my work click the link below and
+                        start sharing"
                     </p>
-                    <a href="#" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80 ml-2">See Docs</a>
+                    <a href="#" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80 ml-2">Sign up</a>
                 </div>
             </div>
 
