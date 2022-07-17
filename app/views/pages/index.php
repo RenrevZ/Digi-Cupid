@@ -122,11 +122,11 @@
 </div>
 <div class="container mx-auto">
 
-    <div class="flex flex-col justify-between mt-36 md:flex-row mb-36">
+    <div class="grid  mt-36 md:grid-cols-2 mb-36">
 
-        <div class="left mb-10 mr-60 items-center ml-10">
-            <img src="https://static.wixstatic.com/media/c6ba6c_377676e7db5c4b58ac33dfe0f985bfe0~mv2.gif" alt="" 
-            class="w-96 ">
+        <div class="left mb-10  items-center ml-10">
+            <img src="https://c.tenor.com/NOYF3f82b_gAAAAC/programmer.gif" alt="" 
+            >
             <p class="text-sm text-slate-600">
                 "This site was was build using PHP OOP and MVC structure "
             </p>
