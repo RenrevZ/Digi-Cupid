@@ -20,4 +20,13 @@
     </div>
 </div>
 
+<div class="wrapper grid grid-cols-2">
+    <div class="left-col">
+        <h1 class="text-2xl">
+            Travel Share helps discover and promote other
+            places
+        </h1>
+    </div>
+</div>
+
 <?php require_once APPROOT .'/views/inc/footer.php';?>
