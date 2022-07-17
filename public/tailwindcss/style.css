@@ -619,6 +619,22 @@ video {
   margin-right: auto;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -629,10 +645,6 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mb-4 {
@@ -647,13 +659,6 @@ video {
   margin-bottom: 9rem;
 }
 
-<<<<<<< HEAD
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-=======
->>>>>>> login
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -666,20 +671,8 @@ video {
   margin-left: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-60 {
-  margin-bottom: 15rem;
 }
 
 .mb-8 {
@@ -714,13 +707,10 @@ video {
   height: 4rem;
 }
 
-<<<<<<< HEAD
-=======
 .h-full {
   height: 100%;
 }
 
->>>>>>> login
 .w-16 {
   width: 4rem;
 }
@@ -733,8 +723,6 @@ video {
   width: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 .w-full {
   width: 100%;
 }
@@ -743,7 +731,6 @@ video {
   max-width: 100%;
 }
 
->>>>>>> login
 .max-w-md {
   max-width: 28rem;
 }
@@ -752,10 +739,6 @@ video {
   max-width: 24rem;
 }
 
-<<<<<<< HEAD
-.max-w-full {
-  max-width: 100%;
-=======
 .origin-\[0\] {
   transform-origin: 0;
 }
@@ -779,7 +762,6 @@ video {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
->>>>>>> login
 }
 
 .flex-col {
@@ -921,8 +903,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-=======
 .bg-transparent {
   background-color: transparent;
 }
@@ -936,7 +916,6 @@ video {
   padding: 0.75rem;
 }
 
->>>>>>> login
 .p-5 {
   padding: 1.25rem;
 }
@@ -947,10 +926,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .p-2 {
@@ -995,8 +970,6 @@ video {
   text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 .align-baseline {
   vertical-align: baseline;
 }
@@ -1011,15 +984,9 @@ video {
   line-height: 2rem;
 }
 
->>>>>>> login
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1035,11 +1002,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1280,10 +1242,6 @@ a:hover{
 }
 
 @media (min-width: 768px) {
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .md\:mt-20 {
     margin-top: 5rem;
   }
@@ -1292,8 +1250,6 @@ a:hover{
     margin-top: -9rem;
   }
 
-<<<<<<< HEAD
-=======
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1310,7 +1266,6 @@ a:hover{
     margin-top: -2.5rem;
   }
 
->>>>>>> login
   .md\:block {
     display: block;
   }
