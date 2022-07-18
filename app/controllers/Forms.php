@@ -20,30 +20,47 @@ class Forms extends Controller{
                 ];
             filter_input_array(INPUT_POST, $data);
            
-            //chech if field is empty
-            if(empty($data['username'])){
-                $data['username_err'] = 'please enter username first';
-            }else{
-                if($this->formsModel->ValidateUsername($data['username'])){
-                    $data['username_err'] = 'username already taken';
-                }
-            }
-
-
+            //check if field is empty
+          
             if(empty($data['password'])){
                 $data['password_err'] = 'please enter a password first';
             }
 
+            if($this->formsModel->ValidateUsername($data['username'])){
+                
+            }
+            else{
+                $data['username_err'] = 'user not found';
+            }
+
+            if(empty($data['username'])){
+                $data['username_err'] = 'please enter username first';
+            }
             
+            if(empty($data['username_err']) && empty($data['password_err'])){
+                // validate the input
+                // check the login details
+                $loginuser = $this->formsModel->login($data['username'],$data['password']);
+
+                if($loginuser){
+                    // create a session
+                    $this->userSession($loginuser);
+                }else{
+                    // throw an error
+                    $data['password_err'] = 'incorrect password';
+                    $this->view('forms/login',$data);
+                }
+            }
+               
 
             $this->view('forms/login',$data);
-        }else{
-            $data=[
-                'title' => 'Login'
-            ];
-                
-            $this->view('forms/login',$data);
-        }
+            }else{
+                $data=[
+                    'title' => 'Login'
+                ];
+                    
+                $this->view('forms/login',$data);
+            }
        
     }
 
@@ -108,7 +125,16 @@ class Forms extends Controller{
 
             if(empty($data['firstname_err']) && empty($data['Lastname_err'])  && empty($data['gender_err']) && empty($data['birthday_err'])
             && empty($data['username_err'])  && empty($data['password_err'])  && empty($data['confirm_pass_err'])){
-                echo 'everything is okay';
+                
+                // hashing the password
+                $data['password'] = password_hash($data['password'],PASSWORD_DEFAULT);
+                header('location:'.URLROOT);
+                //REGISTER THE DATA ARRAY
+                if($this->formsModel->Register($data)){
+                    redirect('forms/login');
+                }else{
+                    die('error inserting data');
+                }
             }
 
             $this->view('forms/signup',$data);
@@ -120,5 +146,14 @@ class Forms extends Controller{
             $this->view('forms/signup',$data);
         }
        
+    }
+
+
+    public function userSession($user){
+        $_SESSION['user_id'] = $user->id;
+        $_SESSION['firstname'] = $user->first_name;
+        $_SESSION['lastname'] = $user->Last_name;
+        $_SESSION['gender'] = $user->gender;
+        $_SESSION['birthdate'] = $user->birthdate;
     }
 }
