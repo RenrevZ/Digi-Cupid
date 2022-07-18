@@ -131,7 +131,7 @@ class Forms extends Controller{
                 header('location:'.URLROOT);
                 //REGISTER THE DATA ARRAY
                 if($this->formsModel->Register($data)){
-                    redirect('forms/login');
+                    redirect('main/post');
                 }else{
                     die('error inserting data');
                 }
@@ -150,10 +150,13 @@ class Forms extends Controller{
 
 
     public function userSession($user){
+        session_start();
         $_SESSION['user_id'] = $user->id;
         $_SESSION['firstname'] = $user->first_name;
-        $_SESSION['lastname'] = $user->Last_name;
+        $_SESSION['Lastname'] = $user->last_name;
         $_SESSION['gender'] = $user->gender;
         $_SESSION['birthdate'] = $user->birthdate;
+
+        redirect('main/post');
     }
 }
