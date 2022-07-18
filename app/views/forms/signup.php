@@ -83,7 +83,7 @@
 
                   <!-- Error message -->
                   <small class="text-md text-red-500">
-                    <?php echo (!empty($data['username_err'])) ? $data['username_err']: '';?>
+                    <?php echo (!empty($data['password_err'])) ? $data['password_err']: '';?>
                 </small>
             </div>
                 <!-- Confirm password -->

@@ -8,6 +8,7 @@ class form{
         $this->db = new Database;
     }
 
+    // Validate the already registered email
     public function ValidateUsername($username){
         $this->db->query('SELECT * FROM users WHERE username = :username');
         $this->db->bind(':username',$username);
@@ -19,5 +20,10 @@ class form{
         }else{
             return false;
         }
+    }
+
+    // register the post array
+    public function Register($data){
+
     }
 }

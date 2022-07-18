@@ -34,6 +34,8 @@ class Forms extends Controller{
                 $data['password_err'] = 'please enter a password first';
             }
 
+            
+
             $this->view('forms/login',$data);
         }else{
             $data=[
@@ -90,7 +92,6 @@ class Forms extends Controller{
                 }
             }
 
-
             if(empty($data['password'])){
                 $data['password_err'] = 'please enter a password first';
             }
@@ -98,6 +99,16 @@ class Forms extends Controller{
 
             if(empty($data['confirm_pass'])){
                 $data['confirm_pass_err'] = 'please enter a Confirm password first';
+            }
+
+            //check if both password is the same
+            if($data['password'] != $data['confirm_pass']){
+                $data['confirm_pass_err'] = 'password and current password is not the same';
+            }
+
+            if(empty($data['firstname_err']) && empty($data['Lastname_err'])  && empty($data['gender_err']) && empty($data['birthday_err'])
+            && empty($data['username_err'])  && empty($data['password_err'])  && empty($data['confirm_pass_err'])){
+                echo 'everything is okay';
             }
 
             $this->view('forms/signup',$data);
