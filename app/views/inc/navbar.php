@@ -6,7 +6,12 @@
         </div>
         
         <?php if(isset($_SESSION['user_id'])):?>
-
+            <span class="md:hidden flex mr-10">
+                <i class="fa-solid fa-house-chimney text-md"></i>
+            <img class="w-12 rounded-full" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
+                />
+            </span>
+            
         <?php else :?>
             <!-- hamburger menu -->
             <div class="menu block md:hidden">

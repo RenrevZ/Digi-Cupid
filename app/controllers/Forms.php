@@ -131,7 +131,7 @@ class Forms extends Controller{
                 header('location:'.URLROOT);
                 //REGISTER THE DATA ARRAY
                 if($this->formsModel->Register($data)){
-                    redirect('main/post');
+                    redirect('forms/login');
                 }else{
                     die('error inserting data');
                 }

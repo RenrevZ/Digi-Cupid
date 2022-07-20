@@ -2,7 +2,7 @@
 
 <!-- profile -->
 <div class="flex">
-    <div class="bg-white px-4 py-5 rounded-lg shadow-lg text-center w-80 h-screen hidden md:block">
+    <div class="bg-white px-4 py-5 rounded-lg shadow-lg text-center w-80 h-screen hidden md:block md:mr-24">
       <div class="mb-4 border border-sky-600 rounded-full">
         <?php if($_SESSION['gender'] == 'male'):?>
         <img class="w-auto mx-auto rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
@@ -19,14 +19,14 @@
             <p class="text-slate-500">post</p>
         </div>
 
-        <div class="post">
+        <div class="post ">
             <h3 class="text-bold">500</h3>
-            <p class="text-slate-700">followers</p>
+            <p class="text-slate-700 pr-10">followers</p>
         </div>
 
         <div class="post">
             <h3 class="text-bold">2</h3>
-            <p class="text-slate-700">following</p>
+            <p class="text-slate-700">visits</p>
         </div>
       </div>
       <label class="cursor-pointer mt-6">
@@ -36,17 +36,18 @@
 
       <!-- Profile details -->
       <div class="profile-details">
-        <h1 class="text-3xl text-slate-500 mt-5">
+        <h1 class="text-3xl text-sky-500 mt-5">
             <?php echo  $_SESSION['firstname'].'  '.$_SESSION['Lastname']?>
         </h1>
-        <ul class="list-none text-left pl-10 leading-8 text-slate-500 mt-5">
+        <ul class="list-none text-left  leading-8 text-slate-500 mt-5">
             <li><i class="fa-solid fa-mars-and-venus pr-5"></i><?php echo $_SESSION['gender']?></li>
             <li><i class="fa-solid fa-cake-candles pr-5"></i><?php echo $_SESSION['birthdate']?></li>
         </ul>
       </div>
 
     </div>
-
+        
+    <!-- POST -->
     <div class="post w-full mx-10">
         <div class="container shadow-lg p-10">
             <div class="flex items-center">
@@ -62,21 +63,20 @@
             
             </div>
 
-            <form action="">
+            <form action="" method="POST">
                 <div class="buttons flex justify-end">
                     <label class="cursor-pointer mt-6">
-                    <span class="p-2 bg-sky-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-95 transition-transform mx-1 flex" >
-                    <i class="fa-solid fa-image mt-1"></i>Image</span>
+                    <span class="p-2 bg-sky-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-95 transition-transform mx-1 flex p-5" >
+                    <i class="fa-solid fa-image mt-1 mr-2"></i>Image</span>
                     <input type='file' class="hidden" :multiple="multiple" :accept="accept" />
                     </label>
 
-                    <button 
-                    type="submit" 
-                        class="p-2 bg-sky-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-95 transition-transform mx-1 flex"
-                            >
-                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                        <span class="ml-2">upload</span>
-                    </button>
+                    <label class="cursor-pointer mt-6">
+                    <span class="p-2 bg-sky-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-95 transition-transform mx-1 flex p-5" >
+                    <i class="fa-solid fa-arrow-up-from-bracket mr-2"></i>upload</span>
+                    <input type='submit' class="hidden" :multiple="multiple" :accept="accept" />
+                    </label>
+
                 </div>
             </form>
             
