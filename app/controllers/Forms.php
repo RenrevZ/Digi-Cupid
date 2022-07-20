@@ -150,7 +150,6 @@ class Forms extends Controller{
 
 
     public function userSession($user){
-        session_start();
         $_SESSION['user_id'] = $user->id;
         $_SESSION['firstname'] = $user->first_name;
         $_SESSION['Lastname'] = $user->last_name;

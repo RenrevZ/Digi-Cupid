@@ -683,10 +683,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
-}
-
 .block {
   display: block;
 }
@@ -1051,14 +1047,14 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1278,10 +1274,6 @@ a:hover{
 
   .md\:-mt-10 {
     margin-top: -2.5rem;
-  }
-
-  .md\:-mt-20 {
-    margin-top: -5rem;
   }
 
   .md\:block {
