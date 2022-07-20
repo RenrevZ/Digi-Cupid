@@ -155,7 +155,17 @@ class Forms extends Controller{
         $_SESSION['Lastname'] = $user->last_name;
         $_SESSION['gender'] = $user->gender;
         $_SESSION['birthdate'] = $user->birthdate;
-
         redirect('main/post');
     }
+
+    public function logout(){
+        unset( $_SESSION['user_id']);
+        unset( $_SESSION['firstname']);
+        unset( $_SESSION['Lastname']);
+        unset( $_SESSION['gender']);
+        unset( $_SESSION['birthdate']);
+        session_destroy();
+        redirect('pages/index');
+    }
+
 }

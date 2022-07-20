@@ -35,13 +35,6 @@ a:hover{
     animation-duration: 0.8s;
 }
 
-@keyframe drive {
-    from{
-        position: absolute;
-        left:30%
-    }to{
-        position: absolute;
-        left:0
-    }
-}
+
+
 

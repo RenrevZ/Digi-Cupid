@@ -7,6 +7,7 @@
 
 
         public function post(){
+
             $this->view('main/post');
         }
     }
