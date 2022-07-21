@@ -9,10 +9,11 @@ class Post{
      }
 
      public function Insertpost($data){
-         $this->db->query("INSERT INTO post(userid,description) 
-                           VALUES(:userid,:description)");
+         $this->db->query("INSERT INTO post(userid,description,image) 
+                           VALUES(:userid,:description,:image)");
          $this->db->bind(':userid',$data['user_id']);
          $this->db->bind(':description',$data['description']);
+         $this->db->bind(':image',$data['images']);
          if($this->db->execute()){
             return true;
          }else{

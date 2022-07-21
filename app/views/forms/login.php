@@ -1,5 +1,4 @@
 <?php require_once APPROOT . '/views/inc/header.php'; ?>
-
 <div class="container mx-auto mt-10 ">
   <form action="<?php echo URLROOT.'/forms/login';?>" method="POST" class="rounded-lg shadow-lg">
     <div class="body grid md:grid-cols-2 justify-around">
@@ -7,7 +6,6 @@
             <img src="https://i.pinimg.com/originals/b8/b7/fa/b8b7faa068cb612f21a7f7268313064b.png" alt=""
             class="h-full">
         </div>
-
         <div class="rigthside md:px-36 md:mt-20">
             <div class="header mb-8 flex justify-center text-3xl mt-3">
                 <h2>Login</h2>

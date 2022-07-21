@@ -36,7 +36,20 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
-console.log('hello')
+
+function changeProfile(data){
+    if (data.files && data.files[0]) {
+        var read = new FileReader();
+
+        read.onload = function (e) {
+            $('#profile').attr('src', e.target.result);
+        }
+
+        read.readAsDataURL(data.files[0]);
+    }
+}
+
+
 
 // POST OPTION
 $('#optionbtn').on('click',()=>{
