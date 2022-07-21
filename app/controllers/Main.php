@@ -25,7 +25,7 @@
                     'user_id' => $_SESSION['user_id']
                 ];
 
-                if($this->postModel->getpost($data)){
+                if($this->postModel->Insertpost($data)){
                     redirect('main/post');
                 }else{
                     die('error submiting the file');

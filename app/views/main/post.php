@@ -86,17 +86,31 @@
 
                 </div>
             </form>
-
-               <!-- POST CONTAINER/ Main Post-->
    
-               <?php foreach($data['post'] as $posts):?>
+        </div>
+         <!-- POST CONTAINER/ Main Post-->
+         <?php foreach($data['post'] as $posts):?>
                 <div class="container shadow-lg p-10">
-                    <div class="flex items-center">
-                    <img class="w-12 rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
-                    />
-                    <p><?php  echo $posts->first_name.'  '.$posts->last_name?></p>
+                    <div class="flex justify-between items-center">
+                        <div class="left-post flex items-center">
+                        <img class="w-12 rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
+                                 />
+                        <p><?php  echo $posts->first_name.'  '.$posts->last_name?></p>
+                        </div>
+                    <div class="right-post">
+                        <!-- IF the post is by the login user show this -->
+                        <?php if( $_SESSION['user_id'] === $posts->id):?>
+                        <i class="fa-solid fa-ellipsis text-2xl hover:text-slate-500 cursor-pointer" id="optionbtn"></i>
+                        <ul class="p-5 shadow-md list-none -ml-12 hidden absolute" id="postoption">
+                            <li class="hover:text-sky-600 p-1"><a href="#">Edit</a></li>
+                            <li class="hover:text-sky-600 p-1"><a href="#">Delete</a></li>
+                        </ul>
+                        <?php else :?>
+
+                        <?php endif?>
                     </div>
-                    <small class="text-slate-400 mb-10"><?php echo $posts->created_at?></small>
+                    </div>
+                    <small class="text-slate-400 mb-10 border border-b-2 border-slate-200"><?php echo $posts->created_at?></small>
                     <div class="description">
                         <h2 class="text-2xl">
                             <?php echo $posts->description?>
@@ -104,9 +118,8 @@
                     </div>
                 </div>
             <?php endforeach?>
-            
-        </div>
     </div>
+    
   </div>
 
  

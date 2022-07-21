@@ -8,8 +8,7 @@ class Post{
         $this->db = new Database;
      }
 
-     public function getpost($data){
-     
+     public function Insertpost($data){
          $this->db->query("INSERT INTO post(userid,description) 
                            VALUES(:userid,:description)");
          $this->db->bind(':userid',$data['user_id']);

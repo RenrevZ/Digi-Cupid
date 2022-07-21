@@ -37,3 +37,8 @@ function readURL(input) {
     }
 }
 console.log('hello')
+
+// POST OPTION
+$('#optionbtn').on('click',()=>{
+    $('#postoption').toggle('slide').removeClass('hidden')
+});
