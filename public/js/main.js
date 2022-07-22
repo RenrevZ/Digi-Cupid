@@ -49,6 +49,9 @@ function changeProfile(data){
     }
 }
 
+setTimeout(function() {
+    $('#loginalert').fadeOut('fast');
+}, 1000);
 
 
 // POST OPTION

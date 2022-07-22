@@ -11,8 +11,8 @@
                  <?php echo $data['subtitle'];?>
             </p>
             <div class="button flex">
-                <a href="#" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg">Login</a>
-                <a href="#" class="p-4 text-slate-500 bg-emerald-200 rounded shadow-lg">Sign up</a>
+                <a href="<?php echo URLROOT.'/forms/login'?>" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg">Login</a>
+                <a href="<?php echo URLROOT.'/forms/signup'?>" class="p-4 text-slate-500 bg-emerald-200 rounded shadow-lg">Sign up</a>
             </div>
         </div>
 
@@ -145,7 +145,7 @@
                         i am pleased that you see my work click the link below and
                         start sharing"
                     </p>
-                    <a href="#" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80 ml-2">Sign up</a>
+                    <a href="<?php echo URLROOT.'/forms/signup'?>" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80 ml-2">Sign up</a>
                 </div>
             </div>
 

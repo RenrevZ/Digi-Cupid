@@ -132,7 +132,7 @@ class Forms extends Controller{
                 //REGISTER THE DATA ARRAY
                 if($this->formsModel->Register($data)){
                     redirect('forms/login');
-                    $_SESSION['success'] = 'you can now login';
+                    setData();
                 }else{
                     die('error inserting data');
                 }
