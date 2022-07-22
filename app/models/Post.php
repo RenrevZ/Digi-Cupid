@@ -42,4 +42,28 @@ class Post{
          $row = $this->db->single();
          return $row;
      }
+
+     public function updatepost($data){
+       $this->db->query('UPDATE post SET description = :description WHERE
+       id = :id');
+        $this->db->bind(':id',$data['id']);
+        $this->db->bind(':description',$data['description']);
+        
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+     }
+     
+     public function deletepost($id){
+       $this->db->query('DELETE FROM post WHERE id = :id');
+        $this->db->bind(':id',$id);
+        
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+     }
 }

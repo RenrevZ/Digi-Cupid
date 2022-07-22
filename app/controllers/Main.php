@@ -69,6 +69,39 @@
             $this->view('main/post',$data);
         }
 
+
+        public function edit($id){
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+               $_POST = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
+                $data = [
+                    'id' => $id,
+                    'description' => trim($_POST['newdescript'])
+                ];
+
+
+                if($this->postModel->updatepost($data)){
+                    
+                    redirect('main/post');
+                }else{
+                    die('error submiting the file');
+                }
+
+                $this->view('main/edit',$data);
+            }
+            else{
+                $post = $this->postModel->viewPostsByid($id);
+                $user = $this->formsModel->viewUserByid($post->userid);
+            
+                $data=[
+                    'posts' => $post,
+                    'user' => $user
+                ];
+
+                $this->view('main/edit',$data);
+            }
+        }
+
         public function show($id){
             $post = $this->postModel->viewPostsByid($id);
             $user = $this->formsModel->viewUserByid($post->userid);
@@ -81,5 +114,19 @@
 
             $this->view('main/show',$data);
         }
+        
 
+        public function delete($id){
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){ 
+
+                 if($this->postModel->deletepost($id)){
+                     
+                     redirect('main/post');
+                 }else{
+                     die('error submiting the file');
+                 }
+ 
+                 $this->view('main/post');
+            }
+         }
     }

@@ -110,7 +110,7 @@
                                             <i class="fa-solid fa-file-pen text-slate-400 hover:text-sky-400"></i>
                                         </a>
                                     </li>
-                                    <form action="<?php echo URLROOT?>/main/delete/<?php echo $posts->postID?>">
+                                    <form action="<?php echo URLROOT?>/main/delete/<?php echo $posts->postID?>" method="POST">
                                         <li class="hover:text-sky-600 p-1">
                                             <button type="submit">
                                                 <i class="fa-solid fa-trash text-slate-400 hover:text-sky-400"></i>
