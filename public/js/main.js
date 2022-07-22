@@ -57,4 +57,3 @@ function changeProfile(data){
 // });
 
 
-console.log($('.btn-post').attr('id').length)

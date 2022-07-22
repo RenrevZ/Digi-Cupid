@@ -74,7 +74,7 @@
             $user = $this->formsModel->viewUserByid($post->userid);
             
             $data=[
-                'post' => $post,
+                'posts' => $post,
                 'user' => $user
             ];
 

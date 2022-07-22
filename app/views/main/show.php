@@ -8,7 +8,7 @@
         <img class="w-auto mx-auto rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
         id="profile"/>
         <?php else:?>
-            <img src="https://cdn-icons.flaticon.com/png/512/1785/premium/1785918.png?token=exp=1658317611~hmac=b1910846c70da9bcf033bdec24f48c2f" alt=""
+            <img src="https://cdn-icons-png.flaticon.com/512/1154/1154448.png" alt=""
             class="rounded-full" id="profile">
         <?php endif?>
       </div>
@@ -61,25 +61,26 @@
 
                         <div class="right-post">
                         <!-- IF the post is by the login user show this -->
-                        <?php if( $_SESSION['user_id'] === $data['post']->id):?>
-                        <i class="fa-solid fa-ellipsis text-2xl hover:text-slate-500 cursor-pointer btn-post" id="optionbtn"></i>
-                        <ul class="p-5 shadow-md list-none -ml-12 hidden absolute" id="postoption">
-                            <li class="hover:text-sky-600 p-1"><a href="#">Edit</a></li>
-                            <li class="hover:text-sky-600 p-1"><a href="#">Delete</a></li>
-                        </ul>
+                        <?php if( $_SESSION['user_id'] === $data['posts']->id):?>
+                            <span class="options">
+                                <ul class="flex" id="postoption">
+                                    <li class="hover:text-sky-600 p-1"><a href="#">Edit</a></li>
+                                    <li class="hover:text-sky-600 p-1"><a href="#">Delete</a></li>
+                                </ul>
+                            </span>
                         <?php else :?>
 
                         <?php endif?>
                         </div>
                     </div>
-                    <small class="text-slate-400 mb-10 border border-b-2 border-slate-200"><?php echo $data['post']->created_at?></small>
-                    <div class="description">
-                        <h2 class="text-2xl">
-                            <?php echo $data['post']->description?>
+                    <small class="text-slate-400 mb-10 border border-b-2 border-slate-200"><?php echo $data['posts']->created_at?></small>
+                    <div class="description mb-5">
+                        <h2 class="text-2xl ">
+                            <?php echo $data['posts']->description?>
                         </h2>
                     </div>
                     <div class="photo-container">
-                        <img src="<?php echo $data['post']->image?>" alt="">
+                        <img src="<?php echo $data['posts']->image?>" alt="">
                     </div>
                     <div class="buttons">
                         <ul class="flex justify-between mt-5 border-y-2 border-slate-300 p-2">
@@ -92,7 +93,7 @@
                             </li>
 
                             <li>
-                                <a href="<?php echo URLROOT?>/main/show/<?php echo $data['post']->postID?>">
+                                <a href="<?php echo URLROOT?>/main/show/<?php echo $data['posts']->postID?>">
                                     <i class="fa-solid fa-eye text-slate-400 text-2xl hover:text-sky-600"></i>
                                 </a>
                             </li>

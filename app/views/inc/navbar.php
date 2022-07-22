@@ -6,11 +6,13 @@
         </div>
         
         <?php if(isset($_SESSION['user_id'])):?>
+            <a href="<?php echo URLROOT;?>/main/post">
             <span class="md:hidden flex mr-10">
                 <i class="fa-solid fa-house-chimney text-md"></i>
             <img class="w-12 rounded-full" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
                 />
             </span>
+            </a>
             
         <?php else :?>
             <!-- hamburger menu -->
@@ -32,7 +34,13 @@
         
         <?php if(isset($_SESSION['user_id'])):?>
             <ul class="flex space-x-6">
-                <li class="bg-sky-500 rounded-md p-4 hover:text-gray-200">
+                 <li class="hidden md:block mr-10 p-4 bg-sky-500 ">
+                 <a href="<?php echo URLROOT;?>/main/post">
+                 <i class="fa-solid fa-house-chimney text-2xl"></i>
+                </a>
+                 </li>
+
+                <li class=" rounded-md p-4 hover:text-gray-200 hover:bg-sky-500">
                     <a href="<?php echo URLROOT;?>/forms/logout">Logout</a>
                 </li>
             </ul>
