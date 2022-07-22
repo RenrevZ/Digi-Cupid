@@ -3,7 +3,7 @@
 <!-- profile -->
 <div class="flex">
     <div class="bg-white px-4 py-5 rounded-lg shadow-lg text-center w-80 h-screen hidden md:block md:mr-24 sticky top-20">
-      <div class="mb-4 border border-sky-600 rounded-full">
+      <div class="mb-4 border border-sky-600 rounded-full mitems-center max-w-40">
         <?php if($_SESSION['gender'] == 'male'):?>
         <img class="w-auto mx-auto rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
         id="profile"/>
