@@ -25,11 +25,11 @@
     <div class="container flex flex-col mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
         <div class="flex flex-col space-y-12 md:w-1/2">
             <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-                Why share your travel experience?
+                Why share with Digi Cupid?
             </h2>
             <p class="max-w-sm text-center md:text-left">
-                sharing travels creates memories and help others discover a
-                place that they can enjoy too with the help of your shared travel
+                sharing stories creates memories and help others discover a
+                place that they can enjoy too with the help of your shared moments
                 experience.
             </p>
         </div>
@@ -141,7 +141,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/1154/1154473.png" alt="" class="w-16 -mt-14">
                     <h5 class="text-lg font-bold">Harvy Gascon</h5>
                     <p class="text-md text-slate-600">
-                        "Hi i am Harvy Gascon the Developer of Travel Share
+                        "Hi i am Harvy Gascon the Developer of Digi Cupid
                         i am pleased that you see my work click the link below and
                         start sharing"
                     </p>

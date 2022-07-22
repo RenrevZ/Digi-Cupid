@@ -1,8 +1,8 @@
 <nav class="wrapper flex h-16 bg-sky-400 text-white p-2 md:p-0 <?php if(isset($_SESSION['user_id'])){echo 'sticky top-0';}?>">
     <div class="container mx-auto flex justify-between md:justify-around">
         <div class="wrapper flex self-center text-2xl font-medium">
-            <h1>Travel share</h1>
-            <img src="https://cdn-icons-png.flaticon.com/512/189/189676.png" alt="" class="ml-2 w-8" />
+            <h1>Digi Cupid</h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/6645/6645555.png" alt="" class="ml-2 w-8" />
         </div>
         
         <?php if(isset($_SESSION['user_id'])):?>

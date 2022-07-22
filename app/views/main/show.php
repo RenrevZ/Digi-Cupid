@@ -89,7 +89,9 @@
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-comment text-slate-400 text-2xl hover:text-sky-600"></i>
+                            <a href="<?php echo URLROOT?>/main/comment/<?php echo $data['posts']->postID?>">
+                                    <i class="fa-solid fa-comment text-slate-400 text-2xl hover:text-sky-600"></i>
+                                </a>
                             </li>
 
                             <li>
