@@ -52,6 +52,9 @@ function changeProfile(data){
 
 
 // POST OPTION
-$('#optionbtn').on('click',()=>{
-    $('#postoption').toggle('slide').removeClass('hidden')
-});
+// $('#optionbtn').on('click',()=>{
+//     $('#postoption').toggle('slide').removeClass('hidden')
+// });
+
+
+console.log($('.btn-post').attr('id').length)

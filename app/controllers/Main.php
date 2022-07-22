@@ -7,6 +7,7 @@
            }
 
            $this->postModel = $this->model('Post');
+           $this->formsModel = $this->model('form');
         }
 
 
@@ -66,6 +67,19 @@
             }
 
             $this->view('main/post',$data);
+        }
+
+        public function show($id){
+            $post = $this->postModel->viewPostsByid($id);
+            $user = $this->formsModel->viewUserByid($post->userid);
+            
+            $data=[
+                'post' => $post,
+                'user' => $user
+            ];
+
+
+            $this->view('main/show',$data);
         }
 
     }
