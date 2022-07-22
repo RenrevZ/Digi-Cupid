@@ -37,14 +37,15 @@
                     mkdir('images');
                 }
     
-                $image = $_FILES['image'] ?? null;
+                $image = $_FILES['images'] ?? null;
                 $imagePath = '';
                 if($image){
-                    $imagePath = 'images/'.randomData(8).'/'.$image['name'];
+                    $imagePath = '../public/images/'.randomData(8).'/'.$image['name'];
                     mkdir(dirname($imagePath));
                     move_uploaded_file($image['tmp_name'],$imagePath);
                 }
-    
+                
+                echo $imagePath;
                 $_POST = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
                 $data = [
                     'description' => trim($_POST['post_name']),

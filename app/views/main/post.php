@@ -31,7 +31,7 @@
       </div>
       <label class="cursor-pointer mt-6">
         <span class="mt-2 text-base leading-normal px-4 py-2 bg-blue-500 text-white text-sm rounded-full" >Change Profile</span>
-        <input type='file' class="hidden" :multiple="multiple" :accept="accept" onchange="changeProfile(this);"/>
+        <input type='file'  class="hidden" :multiple="multiple" :accept="accept" onchange="changeProfile(this);"/>
       </label>
 
       <!-- Profile details -->
@@ -82,7 +82,7 @@
                     <label class="cursor-pointer mt-6">
                     <span class="p-2 bg-sky-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-95 transition-transform mx-1 flex p-5" >
                     <i class="fa-solid fa-arrow-up-from-bracket mr-2"></i>upload</span>
-                    <input type='submit' class="hidden" :multiple="multiple" :accept="accept" />
+                    <input type='submit' class="hidden" :multiple="multiple" :accept="accept" name="images" />
                     </label>
 
                 </div>
@@ -116,6 +116,9 @@
                         <h2 class="text-2xl">
                             <?php echo $posts->description?>
                         </h2>
+                    </div>
+                    <div class="photo-container">
+                        <img src="<?php echo $posts->image?>" alt="">
                     </div>
                 </div>
             <?php endforeach?>
