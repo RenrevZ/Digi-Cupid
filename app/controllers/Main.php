@@ -114,6 +114,44 @@
 
             $this->view('main/show',$data);
         }
+
+        public function comment($id){
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+                $_POST = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
+
+                $fullname = $_SESSION['firstname'].'  '. $_SESSION['Lastname'];
+
+                 $data = [
+                     'id' => $id,
+                     'comment' => trim($_POST['comment']),
+                     'fullname' => $fullname
+                 ];
+ 
+ 
+                 if($this->postModel->commentpost($data)){
+                     
+                        redirect('main/comment/'.$id);
+                 }else{
+                     die('error submiting the file');
+                 }
+ 
+                 $this->view('main/comment',$data);
+             }else{
+                $post = $this->postModel->viewPostsByid($id);
+                $comments = $this->postModel->viewCommentsByid($id);
+                $user = $this->formsModel->viewUserByid($post->userid);
+                
+                $data=[
+                    'posts' => $post,
+                    'user' => $user,
+                    'comments' => $comments 
+                ];
+    
+    
+                $this->view('main/comment',$data);
+             }
+        }
         
 
         public function delete($id){

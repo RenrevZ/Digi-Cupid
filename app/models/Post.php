@@ -42,6 +42,14 @@ class Post{
          $row = $this->db->single();
          return $row;
      }
+     
+     public function viewCommentsByid($id){
+         $this->db->query('SELECT * FROM comments WHERE postid = :id');
+         $this->db->bind(':id',$id);
+         $row = $this->db->resultSet();
+         return $row;
+     }
+
 
      public function updatepost($data){
        $this->db->query('UPDATE post SET description = :description WHERE
@@ -66,4 +74,20 @@ class Post{
             return false;
         }
      }
+
+     public function commentpost($data){
+         $this->db->query("INSERT INTO comments(username,postid,comment) 
+         VALUES(:username,:postid,:comment)");
+         $this->db->bind(':username',$data['fullname']);
+         $this->db->bind(':postid',$data['id']);
+         $this->db->bind(':comment',$data['comment']);
+         
+         if($this->db->execute()){
+            return true;
+         }
+         else{
+            return false;
+         };
+     }
+     
 }

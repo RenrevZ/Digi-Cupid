@@ -82,7 +82,7 @@
                             placeholder=" "  value=" <?php echo $data['posts']->description?>"/>
                             </div>
                             <div class="photo-container">
-                                <img src="<?php echo $data['posts']->image?>" alt="">
+                                <img src="../<?php echo $data['posts']->image?>" alt="">
                             </div>
                             <div class="buttons">
                                 <ul class="flex  mt-5">
