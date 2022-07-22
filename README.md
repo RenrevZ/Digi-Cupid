@@ -4,16 +4,20 @@
 
 
 ## Key features
- -User Authentication
- -Routing/url system privacy
- -Adding posts
- -Deleting posts
- -Editing posts
- -Comments
- -profile
- -file upload
+- User Authentication
+- Routing/url system privacy
+- Adding posts
+- Deleting posts
+- Editing posts
+- Comments
+- profile
+- file upload
 
-## Images
+## Desktop images
+<img src="screenshots/Index_desktop.png" alt="Pharmacy management system github">
+<img src="screenshots/login_desktop.png" alt="Pharmacy management system github">
+<img src="screenshots/post_desktop.png" alt="Pharmacy management system github">
+<img src="screenshots/comment_desktop.png" alt="Pharmacy management system github">
 
 ## LICENSE
 [MIT License](LICENSE)
