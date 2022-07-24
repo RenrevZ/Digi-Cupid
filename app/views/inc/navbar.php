@@ -1,4 +1,4 @@
-<nav class="wrapper flex h-16 bg-sky-400 text-white p-2 md:p-0 <?php if(isset($_SESSION['user_id'])){echo 'sticky top-0';}?>">
+<nav class="wrapper flex h-16 bg-sky-400 text-white p-2 md:p-0 w-full <?php if(isset($_SESSION['user_id'])){echo 'sticky top-0';}?>">
     <div class="container mx-auto flex justify-between md:justify-around">
         <div class="wrapper flex self-center text-2xl font-medium">
             <h1>Digi Cupid</h1>

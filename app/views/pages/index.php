@@ -120,24 +120,24 @@
 <div class="container mx-auto text-center mt-36">
     <h2 class="text-4xl">Learn about the Production</h2>
 </div>
-<div class="container mx-auto">
+<div class="container mx-auto ">
 
-    <div class="grid  md:mt-36 md:grid-cols-2 mb-36">
+    <div class="grid grid-cols-1 md:mt-36 md:grid-cols-2 mb-36">
 
-        <div class="left mb-10  items-center ml-10 ">
+        <div class="left mb-10  flex flex-col items-center md:ml-10 ">
             <img src="https://cdn.dribbble.com/users/1162077/screenshots/5403918/focus-animation.gif" alt="" 
-            >
+             class="w-60 md:w-96">
             <p class="text-sm text-slate-600">
                 "This site was was build using PHP OOP and MVC structure "
             </p>
         </div>
 
-        <div class=" px-5 mx-auto text-center">
+        <div class="mx-auto text-center">
             <!-- Developer Card -->
             <div class="flex flex-col  md:flex-row md:mt-24">
 
                 <!-- Developer -->
-                <div class="flex flex-col items-center p-6 space-y-2 rounded-lg bg-slate-200 md:w-96">
+                <div class="flex flex-col items-center md:p-6 space-y-2 rounded-lg bg-slate-200 md:w-96">
                     <img src="https://cdn-icons-png.flaticon.com/512/1154/1154473.png" alt="" class="w-16 -mt-14">
                     <h5 class="text-lg font-bold">Harvy Gascon</h5>
                     <p class="text-md text-slate-600">
@@ -145,7 +145,7 @@
                         i am pleased that you see my work click the link below and
                         start sharing"
                     </p>
-                    <a href="<?php echo URLROOT.'/forms/signup'?>" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80 ml-2">Sign up</a>
+                    <a href="<?php echo URLROOT.'/forms/signup'?>" class="p-4 text-white bg-sky-400 rounded mr-3 shadow-lg w-80">Sign up</a>
                 </div>
             </div>
 
