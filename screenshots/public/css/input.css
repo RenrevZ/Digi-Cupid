@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply font-mono;
+}
+
+.active {
+    @apply bg-sky-500;
+    border-radius: 5px;
+  }
+
+a:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+#home,#about{
+    transition: 0.2s;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+#menuhidden{
+    display: none;
+}
+
+#bus{
+    position: relative;
+    animation-name: drive;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+
+
+

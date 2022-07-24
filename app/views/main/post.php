@@ -48,7 +48,7 @@
     </div>
         
     <!-- POST -->
-    <div class="post w-96 md:ml-60 ml-12">
+    <div class="post w-96 md:ml-60 flex flex-col mx-auto">
         <div class="container shadow-lg p-10">
             <div class="flex items-center">
                 <img class="w-12 rounded-full object-cover object-center" src="https://i1.pngguru.com/preview/137/834/449/cartoon-cartoon-character-avatar-drawing-film-ecommerce-facial-expression-png-clipart.jpg" alt="Avatar Upload" 
@@ -60,10 +60,9 @@
             <form action="<?php echo URLROOT.'/main/post'?>" method="POST" runat="server" class="mb-10" 
             enctype="multipart/form-data">
             <div class="relative z-0 mb-6 w-full group mt-10">
-                <input type="text" name="post_name" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <input type="text" name="post_name" id="floating_email"  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  required pattern="\S+"/>
                 <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                     Post....</label>
-            
             </div>
 
             <!-- PHOTO CONTAINER -->

@@ -51,10 +51,10 @@
                 $data = [
                     'description' => trim($_POST['post_name']),
                     'user_id' => $_SESSION['user_id'],
-                    'images' => $imagePath
+                    'images' => $imagePath,
+                    'desk_error' => ''
                 ];
 
-                
 
                 if($this->postModel->Insertpost($data)){
                     
